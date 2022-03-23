@@ -419,7 +419,7 @@ section .title::after{
     width: 85%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 60%;
 }
 .skills-content .right .ruby::before{
     width: 85%;
