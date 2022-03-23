@@ -35,10 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about,.project, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.project .project-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -136,7 +137,7 @@ section .title::after{
 .scroll-up-btn{
     position: fixed;
     height: 45px;
-    width: 42px;
+    width: 45px;
     background: crimson;
     right: 30px;
     bottom: 10px;
@@ -153,7 +154,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .scroll-up-btn.show{
-    bottom: 30px;
+    bottom: 90px;
     opacity: 1;
     pointer-events: auto;
 }
@@ -165,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/moon.jpeg") no-repeat top;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -184,7 +185,7 @@ section .title::after{
     font-size: 27px;
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 600;
     margin-left: -3px;
 }
@@ -217,6 +218,7 @@ section .title::after{
 .about .title::after{
     content: "who i am";
 }
+
 .about .about-content .left{
     width: 45%;
 }
@@ -257,17 +259,65 @@ section .title::after{
     background: none;
 }
 
+/* project section styling */
+.project .title::after{
+    content: "My Projects";
+}
+
+.project .project-content .left{
+    width: 45%;
+}
+.project .project-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.project .project-content .right{
+    width: 55%;
+}
+.project .project-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.project .project-content .right .text span{
+    color: crimson;
+}
+.project .project-content .right p{
+    text-align: justify;
+}
+.project .project-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.project .project-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+
 /* services section styling */
-.services, .teams{
+.services, .teams, .contact{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.teams .title::before,
+.contact .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.teams .title::after,
+.contact .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -366,18 +416,26 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 85%;
 }
 .skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
-    width: 50%;
+.skills-content .right .ruby::before{
+    width: 85%;
 }
 .skills-content .right .mysql::before{
+    width: 75%;
+}
+.skills-content .right .teamwork::before{
+    width: 95%;
+}
+.skills-content .right .timemanagement::before{
+    width: 85%;
+}
+.skills-content .right .leadership::before{
     width: 70%;
 }
-
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
@@ -442,6 +500,7 @@ section .title::after{
 }
 
 /* contact section styling */
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -475,7 +534,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: rgb(206, 155, 155);
 }
 .contact .right form .fields{
     display: flex;
@@ -678,3 +737,53 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+.footer {
+    text-align: center;
+    background: rgb(231, 228, 228);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 2.5rem;
+  }
+  .footer-links {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    padding-left: 40%;
+  }
+  .footer-links a {
+    color: #332e2e;
+    opacity: 15;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 10px;
+    transition: all 200ms ease-in-out;
+    opacity: .7;
+  }
+  .footer-links a:hover {
+    color: crimson;
+    opacity: 1;
+  }
+  .footer-copyright{
+    color: rgb(226, 57, 57);
+    font-size: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
