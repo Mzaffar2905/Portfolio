@@ -619,6 +619,13 @@ footer span a:hover{
     }
 }
 
+@media (max-width: 1104px) {
+    .project .project-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -670,6 +677,7 @@ footer span a:hover{
     .about .about-content .column{
         width: 100%;
     }
+    
     .about .about-content .left{
         display: flex;
         justify-content: center;
@@ -678,6 +686,22 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
+
+    .project .project-content .column{
+        width: 100%;
+    }
+    
+    .project .project-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .project .project-content .right{
+        flex: 100%;
+    } 
+
+
+
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
